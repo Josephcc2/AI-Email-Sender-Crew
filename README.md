@@ -23,7 +23,7 @@ crewai install
 - Modify `src/gmail_testing_final/config/tasks.yaml` to define your tasks (Including email structure, user's name, and unavailability time period)
 - Modify `src/gmail_testing_final/crew.py` to add your own logic, tools and specific args
 - Modify `src/gmail_testing_final/main.py` to add custom inputs for your agents and tasks (Including list of who to respond to)
-- Modify `src/gmail_testing_final/credentials.json` with Google Cloud API services credentials
+- Modify `gmail_testing_final/credentials.json` with Google Cloud API services credentials
 
 ## Running the Project
 
