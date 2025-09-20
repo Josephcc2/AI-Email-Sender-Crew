@@ -1,7 +1,7 @@
 # AI-Email-Sender-Crew
 AI Agents work together using CrewAI to automate sending emails to known people, given a length of time.
 
-Ensure you have Python >=3.10 <3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+Ensure you have Python >=3.10 <3.13 and CrewAI installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
 
 First, if you haven't already, install uv:
 
@@ -23,7 +23,7 @@ crewai install
 - Modify `src/gmail_testing_final/config/tasks.yaml` to define your tasks (Including email structure, user's name, and unavailability time period)
 - Modify `src/gmail_testing_final/crew.py` to add your own logic, tools and specific args
 - Modify `src/gmail_testing_final/main.py` to add custom inputs for your agents and tasks (Including list of who to respond to)
-- Modify 'credentials.json' with Google Cloud API services credentials
+- Modify `src/gmail_testing_final/credentials.json` with Google Cloud API services credentials
 
 ## Running the Project
 
