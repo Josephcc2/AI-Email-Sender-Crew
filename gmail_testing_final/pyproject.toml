@@ -1,0 +1,23 @@
+[project]
+name = "gmail_testing_final"
+version = "0.1.0"
+description = "gmail-testing-final using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.105.0,<1.0.0"
+]
+
+[project.scripts]
+gmail_testing_final = "gmail_testing_final.main:run"
+run_crew = "gmail_testing_final.main:run"
+train = "gmail_testing_final.main:train"
+replay = "gmail_testing_final.main:replay"
+test = "gmail_testing_final.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

@@ -1,0 +1,27 @@
+finder_task:
+  description: >
+    Search through the given list of emails and select all of the emails that are from known people.
+    Known People: 
+    {knownPeople}
+    List of emails: 
+    {reportText}
+  expected_output: >
+    A list which includes only the emails from the list of known people list, do not include names or any other text except for the email itself.
+    Known People: 
+    {knownPeople}
+    List of emails: 
+    {reportText}
+    
+  agent: gmail_finder
+
+response_task:
+  description: >
+    Write a formal email saying that John is busy for 4 days.
+  expected_output: >
+    An email informing that receiver that John is busy for 4 days. Do not include a subject. 
+    The email should be structured as followed: 
+    Hello, 
+    [Text Explaining Unavailability]
+    Best,
+    John's Assistant
+  agent: response_writer
